@@ -5,7 +5,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples lectura_datos ("NH0046")
 lectura_datos <- function(id_estacion) {
   estacion_url <- paste0("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/", id_estacion, ".csv")
   ruta <- paste0(tempdir(), "/", id_estacion, ".csv")
