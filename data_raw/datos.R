@@ -7,4 +7,4 @@ datos <- data.frame(a = sample(1000),
 #luego uso la funcion de usethis::use_data("datos") lo cual guarda el archivo
 #comprimido en la carpeta datos
 
-usethis::use_data("datos")
+usethis::use_data(datos)
