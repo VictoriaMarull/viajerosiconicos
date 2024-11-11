@@ -8,3 +8,4 @@ datos <- data.frame(a = sample(1000),
 #comprimido en la carpeta datos
 
 usethis::use_data(datos)
+#hola
