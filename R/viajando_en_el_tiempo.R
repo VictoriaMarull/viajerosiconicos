@@ -49,17 +49,17 @@ viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
 
   # Determinar si será un buen día para el signo basado en la temperatura
   if (signo == "Aries" && temperatura_promedio > 15) {
-    dia_bueno <- "¡Buen día para aventurarse con energía!"
+    dia_bueno <- "¡Buen dia para aventurarse con energia!"
   } else if (signo == "Leo" && temperatura_promedio > 20) {
     dia_bueno <- "¡Perfecto para brillar bajo el sol!"
   } else if (signo == "Capricornio" && temperatura_promedio < 15) {
     dia_bueno <- "Un día tranquilo y productivo en temperaturas frescas."
   } else if (signo == "Sagitario" && temperatura_promedio > 20) {
     dia_bueno <- "¡Día ideal para una aventura al aire libre!"
-  } else if (signo == "Cáncer" && temperatura_promedio <= 20) {
-    dia_bueno <- "Un día acogedor, perfecto para estar en casa o cerca de amigos."
+  } else if (signo == "Cancer" && temperatura_promedio <= 20) {
+    dia_bueno <- "Un dia acogedor, perfecto para estar en casa o cerca de amigos."
   } else {
-    dia_bueno <- "No es el día perfecto, pero aún puedes disfrutar."
+    dia_bueno <- "No es el dia perfecto, pero aun puedes disfrutar."
   }
 
   # Devolver el resultado
