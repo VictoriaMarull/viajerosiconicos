@@ -2,7 +2,6 @@
 #'
 #' @param ids_estaciones ponemos los id de las estaciones
 #'
-#' @export
 #'
 #' @examples
 #' Definir los IDs de las estaciones
@@ -11,7 +10,9 @@
 #' dataset_completo <- unir_datasets(ids_estaciones)
 
 #'
-#' @return
+#' @return devuelve los datasets unidos
+#'
+#' @export
 unir_datasets <- function(ids_estaciones) {
   # Inicializamos un dataframe vacío
   dataset_completo <- data.frame()
