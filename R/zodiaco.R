@@ -1,4 +1,14 @@
-# Función para sugerir un outfit basado en el signo zodiacal
+#' Zodiaco
+#'
+#' @param fecha_nacimiento tu fecha de nacimiento
+#'
+#' @return te devuelve un outfit segun tu zodiaco
+#'
+#' @examples
+#' ejemplo de uso zodiaco("1990-08-15")
+#'
+#'
+#' @export
 zodiaco <- function(fecha_nacimiento) {
 
   # Convertir la fecha de nacimiento a una fecha de tipo Date
@@ -66,4 +76,4 @@ zodiaco <- function(fecha_nacimiento) {
   return(paste("Tu signo zodiacal es", signo, ". Te sugerimos el siguiente outfit:", outfit))
 }
 
-#ejemplo de uso zodiaco("1990-08-15")
+

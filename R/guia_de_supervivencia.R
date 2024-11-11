@@ -1,4 +1,13 @@
-# Funcion para la Guia de Supervivencia
+#' Guia de supervivencia para viajeros en el tiempo
+#'
+#' @param fecha el usuario debe ingresar la fecha a la cual quiere viajar
+#'
+#' @return te devuelve un outfit en base a la temperatura del dia
+#'
+#' @examples
+#' guia_de_supervivencia("2011-04-25")
+#'
+#' @export
 guia_de_supervivencia <- function(fecha) {
   # Filtrar los datos para esa fecha
   datos_dia <- subset(dataset_completo, fecha == fecha)  # Filtra directamente por fecha
@@ -28,4 +37,3 @@ guia_de_supervivencia <- function(fecha) {
                "y", horas_frio, "horas de frio, te sugerimos:", outfit))
 }
 
-#ejemplo de uso guia_de_supervivencia("2011-04-25")

@@ -1,11 +1,17 @@
-#' Title
+#' Lectura Datos
 #'
-#' @param id_estacion
+#' @param id_estacion este es el id de la estacion
 #'
-#' @return
+#' @return esto devuelve los datasets por estacion
+#'
+#' @examples
+#' lectura_datos ("NH0046")
+#' lectura_datos ("NH0098")
+#' lectura_datos ("NH0437")
+#' lectura_datos ("NH0472")
+#' lectura_datos ("NH0910")
+#'
 #' @export
-#'
-#' @examples lectura_datos ("NH0046")
 lectura_datos <- function(id_estacion) {
   estacion_url <- paste0("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/", id_estacion, ".csv")
   ruta <- paste0(tempdir(), "/", id_estacion, ".csv")

@@ -1,4 +1,14 @@
-# Función para determinar si el día es bueno o malo para el signo zodiacal y si hay datos para esa fecha
+#' Viajando en el tiempo
+#'
+#' @param fecha_nacimiento ingresar fecha de nacimiento en formato aaaa/mm/dd
+#' @param fecha_viaje ingresar fecha de viaje en el tiempo en formato aaaa/mm/dd
+#'
+#' @return esta funcion te devuelve un mensaje para ti viaje en base a tu signo
+#'
+#' @examples
+#' viajando_en_el_tiempo("2004-02-09", "1974-12-30")
+#'
+#' @export
 viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
 
   # Convertir las fechas a formato Date
@@ -112,4 +122,4 @@ viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
                "Comentario del dia:", dia_bueno, dia_comentario))
 }
 
-#viajando_en_el_tiempo("2004-02-09", "1974-12-30")
+
