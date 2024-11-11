@@ -1,12 +1,12 @@
 
-# Función para determinar si el día es bueno para el signo zodiacal y si hay datos para esa fecha
+# Funcion para determinar si el dia es bueno para el signo zodiacal y si hay datos para esa fecha
 viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
 
   # Convertir las fechas a formato Date
   fecha_nacimiento <- as.Date(fecha_nacimiento)
   fecha_viaje <- as.Date(fecha_viaje)
 
-  # Obtener el mes y día de la fecha de nacimiento
+  # Obtener el mes y dia de la fecha de nacimiento
   mes <- as.integer(format(fecha_nacimiento, "%m"))
   dia <- as.integer(format(fecha_nacimiento, "%d"))
 
@@ -16,7 +16,7 @@ viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
   } else if ((mes == 4 && dia >= 20) || (mes == 5 && dia <= 20)) {
     signo <- "Tauro"
   } else if ((mes == 5 && dia >= 21) || (mes == 6 && dia <= 20)) {
-    signo <- "Géminis"
+    signo <- "Geminis"
   } else if ((mes == 6 && dia >= 21) || (mes == 7 && dia <= 22)) {
     signo <- "Cáncer"
   } else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 22)) {
@@ -44,10 +44,10 @@ viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
     return(paste("No se encontraron datos para la fecha de viaje", fecha_viaje, "."))
   }
 
-  # Calcular la temperatura promedio del día de viaje
+  # Calcular la temperatura promedio del dia de viaje
   temperatura_promedio <- mean(datos_dia_viaje$temperatura_abrigo_150cm, na.rm = TRUE)
 
-  # Determinar si será un buen día para el signo basado en la temperatura
+  # Determinar si sera un buen día para el signo basado en la temperatura
   if (signo == "Aries" && temperatura_promedio > 15) {
     dia_bueno <- "¡Buen dia para aventurarse con energia!"
   } else if (signo == "Leo" && temperatura_promedio > 20) {
@@ -66,3 +66,4 @@ viajando_en_el_tiempo <- function(fecha_nacimiento, fecha_viaje) {
   return(paste("Tu signo zodiacal es", signo, ".", "Para la fecha de viaje", fecha_viaje,
                "con una temperatura promedio de", round(temperatura_promedio, 2), "°C,", dia_bueno))
 }
+#viajando_en_el_tiempo("2004-02-09", "1974-12-30")
