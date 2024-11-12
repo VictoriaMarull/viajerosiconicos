@@ -3,14 +3,14 @@
 
 # viajerosiconicos
 
-pongo descricpio
+pongo descricpion
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 ## Installation
 
-You  can install the development version of viajerosiconicos from
+You can install the development version of viajerosiconicos from
 [GitHub](https://github.com/) with:
 
 ``` r

@@ -5,4 +5,4 @@ export(guia_de_supervivencia)
 export(lectura_datos)
 export(unir_datasets)
 export(viajando_en_el_tiempo)
-export(zodiaco)
+
