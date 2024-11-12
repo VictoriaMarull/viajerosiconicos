@@ -51,8 +51,12 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="viajerosiconicos">viajerosiconicos<a class="anchor" aria-label="anchor" href="#viajerosiconicos"></a>
+  <main id="main" class="col-md-9"><div class="section level2">
+<h2 id="viajerosiconicos">viajerosiconicos<a class="anchor" aria-label="anchor" href="#viajerosiconicos"></a>
+</h2>
+</div>
+<div class="section level1">
+<div class="page-header"><h1 id="objetivo">Objetivo<a class="anchor" aria-label="anchor" href="#objetivo"></a>
 </h1></div>
 <p>‘viajerosiconicos’ es un paquete de prueba diseñado para trabajar con datos meteorológicos históricos. Este paquete permite a los usuarios analizar las condiciones climáticas de años pasados y realizar resúmenes sobre temperatura, precipitación y otros fenómenos meteorológicos clave. Con las funciones incluidas, es posible obtener un análisis detallado de las temperaturas extremas, la precipitación y más.</p>
 <p>Este paquete contiene funciones útiles para calcular y analizar los datos meteorológicos de forma sencilla. Las siguientes funciones han sido diseñadas para facilitar el análisis de datos climáticos históricos.</p>
@@ -60,17 +64,17 @@
 <!-- badges: start -->
 
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="instalacion">Instalacion<a class="anchor" aria-label="anchor" href="#instalacion"></a>
 </h2>
-<p>You can install the development version of viajerosiconicos from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>Puedes instalar la versión de desarrollo de <strong><code>viajerosiconicos</code></strong> directamente desde GitHub <a href="https://github.com/" class="external-link">GitHub</a> utilizando el paquete <code>pak</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"VictoriaMarull/viajerosiconicos"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
-</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+</div>
+<div class="section level1">
+<h1 id="importacion-paquete">Importacion Paquete<a class="anchor" aria-label="anchor" href="#importacion-paquete"></a>
+</h1>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/VictoriaMarull/viajerosiconicos" class="external-link">viajerosiconicos</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
@@ -83,24 +87,55 @@
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
 <span><span class="co">## basic example code</span></span></code></pre></div>
+<div class="section level2">
+<h2 id="nuestras-funciones">Nuestras funciones<a class="anchor" aria-label="anchor" href="#nuestras-funciones"></a>
+</h2>
+</div>
+</div>
+<div class="section level1">
+<h1 id="funcion-conversion">Funcion <code>conversion()</code>
+<a class="anchor" aria-label="anchor" href="#funcion-conversion"></a>
+</h1>
+<p>convierte 98°F a Celsius</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/conversion.html">conversion</a></span><span class="op">(</span><span class="fl">98</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 36.66667</span></span></code></pre></div>
+</div>
+<div class="section level1">
+<h1 id="funcion-resumen_meteorologico">Funcion <code>resumen_meteorologico()</code>
+<a class="anchor" aria-label="anchor" href="#funcion-resumen_meteorologico"></a>
+</h1>
+<p>genera un resumen de condiciones meteorologicas para el año 1973</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/resumen_meteorologico.html">resumen_meteorologico</a></span><span class="op">(</span><span class="va">dataset_completo</span>, anio_usuario <span class="op">=</span> <span class="fl">1973</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   temperatura_media temperatura_maxima temperatura_minima precipitacion_total</span></span>
 <span><span class="co">#&gt; 1          17.57041                 42                 -4              5602.8</span></span>
 <span><span class="co">#&gt;   granizo_total horas_frio_total</span></span>
 <span><span class="co">#&gt; 1             4         2059.685</span></span></code></pre></div>
+</div>
+<div class="section level1">
+<h1 id="funcion-grafico_precipitacion">Funcion <code>grafico_precipitacion()</code>
+<a class="anchor" aria-label="anchor" href="#funcion-grafico_precipitacion"></a>
+</h1>
+<p>genera un gráfico de barras para los días con precipitación en 2010</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/grafico_precipitacion.html">grafico_precipitacion</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2010</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
+</div>
+<div class="section level1">
+<h1 id="funcion-temperaturas">Funcion <code>temperaturas()</code>
+<a class="anchor" aria-label="anchor" href="#funcion-temperaturas"></a>
+</h1>
+<p>identifica los días más calurosos y más fríos de 2011</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/temperaturas.html">temperaturas</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2011</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   Anio Dia_Mas_Calido Temperatura_Maxima Dia_Mas_Frio Temperatura_Minima</span></span>
 <span><span class="co">#&gt; 1 2011     2011-12-21               33.7   2011-08-01               3.45</span></span></code></pre></div>
+<p>Si deseas contribuir a viajerosiconicos o aprender más sobre cómo usarlo, visita el repositorio de GitHub para obtener más detalles, documentación y características futuras.</p>
+<p>autora: <a href="mailto:vmarul@mail.austral.edu.ar" class="email">vmarul@mail.austral.edu.ar</a> codigo de contribucion: <a href="https://github.com/VictoriaMarull/viajerosiconicos/blob/master/.github/CONTRIBUTING.md" class="external-link uri">https://github.com/VictoriaMarull/viajerosiconicos/blob/master/.github/CONTRIBUTING.md</a></p>
+<p>¡Feliz viaje en el tiempo!</p>
 </div>
-</div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -143,6 +178,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
