@@ -3,12 +3,12 @@
 
 # viajerosiconicos
 
-‘viajerosiconicos’ es un paquete diseñado para trabajar con datos
-meteorológicos históricos. Este paquete permite a los usuarios analizar
-las condiciones climáticas de años pasados y realizar resúmenes sobre
-temperatura, precipitación y otros fenómenos meteorológicos clave. Con
-las funciones incluidas, es posible obtener un análisis detallado de las
-temperaturas extremas, la precipitación y más.
+‘viajerosiconicos’ es un paquete de prueba diseñado para trabajar con
+datos meteorológicos históricos. Este paquete permite a los usuarios
+analizar las condiciones climáticas de años pasados y realizar resúmenes
+sobre temperatura, precipitación y otros fenómenos meteorológicos clave.
+Con las funciones incluidas, es posible obtener un análisis detallado de
+las temperaturas extremas, la precipitación y más.
 
 Este paquete contiene funciones útiles para calcular y analizar los
 datos meteorológicos de forma sencilla. Las siguientes funciones han
@@ -18,7 +18,7 @@ históricos.
 Es útil para investigadores, estudiantes o cualquier persona interesada
 en estudiar el clima de épocas pasadas, haciendo especial énfasis en las
 temperaturas extremas, la precipitación y las condiciones que
-caracterizaron diferentes años.
+caracterizaron diferentes años.NO DESCARGAR
 
 <!-- badges: start -->
 <!-- badges: end -->

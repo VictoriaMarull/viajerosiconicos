@@ -19,6 +19,11 @@ library(viajerosiconicos)
 ```
 
 ```{r}
-grafico_precipitacion(dataset_completo, 2010)
+conversion(98)
 ```
+```{r}
+resumen_meteorologico(dataset_completo, anio_usuario = 1973)
+```
+
+
 
