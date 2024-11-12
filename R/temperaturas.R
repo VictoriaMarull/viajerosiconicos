@@ -1,3 +1,17 @@
+#' Temperaturas anuales
+#'
+#' @param dataset Un dataframe con los datos meteorológicos históricos
+#' @param anio_usuario Un valor numerico o caracter correspondiente al año para el cual se desea obtener
+#' las diferentes temperaturas anuales
+#'
+#' @return esta funcion devuelve el dia mas calido del anio con su temperatura maxima
+#' junto al dia mas frio del anio con su temperatura minima
+
+#'
+#' @examples
+#' temperaturas(dataset_completo, 2011)
+#'
+#' @export
 temperaturas <- function(dataset, anio_usuario) {
   dataset$fecha <- as.Date(dataset$fecha)  #convertimos la columna fecha a tipo Date
 

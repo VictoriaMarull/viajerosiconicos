@@ -7,7 +7,7 @@
 conversion(fahrenheit)
 }
 \arguments{
-\item{fahrenheit}{temperatura en fahrenheit}
+\item{fahrenheit}{parametro numerico}
 }
 \value{
 devuelve la temperatura en centigrados

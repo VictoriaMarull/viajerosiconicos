@@ -1,3 +1,14 @@
+#' Crear grafico de precipitacion pluviometrica
+#'
+#' @param dataset Un dataframe con los datos meteorológicos históricos
+#' @param anio Un valor numerico o caracter correspondiente al año para el cual se desea obtener el grafico
+#'
+#' @return esta funcion devuelve un grafico con la precipitacion pluviometrica anual
+#'
+#' @examples
+#' grafico_precipitacion(dataset_completo, 2010)
+#'
+#' @export
 grafico_precipitacion <- function(dataset, anio) {
   #nos aseguramos de que la columna este en formato date
   dataset$fecha <- as.Date(dataset$fecha)
@@ -20,4 +31,4 @@ grafico_precipitacion <- function(dataset, anio) {
     ggplot2::theme_minimal() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))  # Rotar las fechas del eje X
 }
-#grafico_precipitacion(dataset_completo, 2010)
+

@@ -1,3 +1,14 @@
+#' Resumen meteorologico anual
+#'
+#' @param dataset Un dataframe con los datos meteorológicos historicos
+#' @param anio_usuario Un valor numerico o caracter correspondiente al año para el cual se desea obtener el resumen
+#'
+#' @return esta funcion devuelve diferentes valores con diferentes fenomenos meteorologicos anuales
+#'
+#' @examples
+#' resumen_meteorologico(dataset_completo, anio_usuario = 1973)
+#'
+#' @export
 resumen_meteorologico <- function(dataset, anio_usuario) {
   dataset$fecha <- as.Date(dataset$fecha)
 
@@ -25,4 +36,4 @@ resumen_meteorologico <- function(dataset, anio_usuario) {
   return(resumen)
 }
 
-# resumen_meteorologico(dataset_completo, anio_usuario = 1973)
+

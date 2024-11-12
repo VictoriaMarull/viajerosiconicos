@@ -6,3 +6,5 @@ dataset_completo <- unir_datasets(ids_estaciones)
 
 # Ver las primeras filas del dataset combinado
 head(dataset_completo)
+
+usethis::use_data(dataset_completo)

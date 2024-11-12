@@ -1,6 +1,6 @@
 #' Conversion de grados
 #'
-#' @param fahrenheit temperatura en fahrenheit
+#' @param fahrenheit parametro numerico
 #'
 #' @return devuelve la temperatura en centigrados
 #'
