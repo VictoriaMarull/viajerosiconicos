@@ -14,3 +14,4 @@ test_that("La funcion une los datasets correctamente", {
   # Verificar que el dataframe tiene filas (dependiendo de los datos que cargues)
   expect_true(nrow(dataset_completo) > 0)
 })
+
