@@ -42,5 +42,4 @@
 #' }
 #'
 #' @source datos meteorologicos obtenidos por mis profesoras :D
-#' @export
 "dataset_completo"
