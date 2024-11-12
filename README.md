@@ -3,7 +3,7 @@
 
 # viajerosiconicos
 
-pongo descricpion
+descripcion
 
 <!-- badges: start -->
 <!-- badges: end -->
