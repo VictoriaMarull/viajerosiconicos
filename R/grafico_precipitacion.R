@@ -1,18 +1,17 @@
-# Función para graficar los días con precipitación
 grafico_precipitacion <- function(dataset, anio) {
-  # Asegurarse de que la columna fecha esté en formato Date
+  #nos aseguramos de que la columna este en formato date
   dataset$fecha <- as.Date(dataset$fecha)
 
-  # Filtrar los datos por el año ingresado y eliminar valores nulos en la columna precipitacion_pluviometrica
+  #filtramos los datos por el año ingresado y eliminamos valores nulos en la columna precipitacion_pluviometrica
   datos_filtrados <- dataset %>%
     dplyr::filter(format(fecha, "%Y") == as.character(anio)) %>%
-    dplyr::filter(!is.na(precipitacion_pluviometrica))  # Eliminar valores nulos
+    dplyr::filter(!is.na(precipitacion_pluviometrica))
 
-  # Filtrar los días con precipitación mayor a 0
+  #filtramos los dias con precipitacion mayor a 0
   datos_con_precipitacion <- datos_filtrados %>%
-    dplyr::filter(precipitacion_pluviometrica > 0)  # Filtrar días con precipitación
+    dplyr::filter(precipitacion_pluviometrica > 0)
 
-  # Crear el gráfico de barras
+  #graficamos
   ggplot2::ggplot(datos_con_precipitacion, ggplot2::aes(x = fecha)) +
     ggplot2::geom_bar(stat = "count", fill = "skyblue") +
     ggplot2::labs(title = paste("Cantidad de agua en mm sobre m2 por anio", anio),
