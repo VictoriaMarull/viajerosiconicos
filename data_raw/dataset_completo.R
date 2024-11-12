@@ -7,4 +7,6 @@ dataset_completo <- unir_datasets(ids_estaciones)
 # Ver las primeras filas del dataset combinado
 head(dataset_completo)
 
-usethis::use_data(dataset_completo)
+# Guardar dataset_completo como un archivo R en la carpeta data/
+usethis::use_data(dataset_completo, overwrite = TRUE)
+
