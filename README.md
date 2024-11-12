@@ -58,7 +58,7 @@ library(dplyr)
 
 ## Nuestras funciones
 
-# Funcion ‘conversion()’
+# Funcion `conversion()`
 
 convierte 98°F a Celsius
 
@@ -67,7 +67,7 @@ conversion(98)
 #> [1] 36.66667
 ```
 
-# Funcion ‘resumen_meteorologico()’
+# Funcion `resumen_meteorologico()`
 
 genera un resumen de condiciones meteorologicas para el año 1973
 
@@ -79,7 +79,7 @@ resumen_meteorologico(dataset_completo, anio_usuario = 1973)
 #> 1             4         2059.685
 ```
 
-# Funcion ‘grafico_precipitacion()’
+# Funcion `grafico_precipitacion()`
 
 genera un gráfico de barras para los días con precipitación en 2010
 
@@ -89,7 +89,7 @@ grafico_precipitacion(dataset_completo, 2010)
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
-# Funcion ‘temperaturas()’
+# Funcion `temperaturas()`
 
 identifica los días más calurosos y más fríos de 2011
 
@@ -103,6 +103,7 @@ Si deseas contribuir a viajerosiconicos o aprender más sobre cómo
 usarlo, visita el repositorio de GitHub para obtener más detalles,
 documentación y características futuras.
 
-autora: <vmarul@mail.austral.edu.ar>
+autora: <vmarul@mail.austral.edu.ar> codigo de contribucion:
+<https://github.com/VictoriaMarull/viajerosiconicos/blob/master/.github/CONTRIBUTING.md>
 
 ¡Feliz viaje en el tiempo!
