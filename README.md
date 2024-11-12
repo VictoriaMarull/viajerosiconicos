@@ -1,7 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# viajerosiconicos
+## viajerosiconicos
+
+# Objetivo
 
 ‘viajerosiconicos’ es un paquete de prueba diseñado para trabajar con
 datos meteorológicos históricos. Este paquete permite a los usuarios
@@ -24,21 +26,21 @@ caracterizaron diferentes años.NO DESCARGAR
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-## Installation
+## Instalacion
 
-You can install the development version of viajerosiconicos from
-[GitHub](https://github.com/) with:
+Puedes instalar la versión de desarrollo de **`viajerosiconicos`**
+directamente desde GitHub [GitHub](https://github.com/) utilizando el
+paquete `pak`:
 
 ``` r
 # install.packages("pak")
 pak::pak("VictoriaMarull/viajerosiconicos")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+# Importacion Paquete
 
 ``` r
 library(viajerosiconicos)
@@ -54,10 +56,20 @@ library(dplyr)
 ## basic example code
 ```
 
+## Nuestras funciones
+
+# Funcion ‘conversion()’
+
+convierte 98°F a Celsius
+
 ``` r
 conversion(98)
 #> [1] 36.66667
 ```
+
+# Funcion ‘resumen_meteorologico()’
+
+genera un resumen de condiciones meteorologicas para el año 1973
 
 ``` r
 resumen_meteorologico(dataset_completo, anio_usuario = 1973)
@@ -67,14 +79,30 @@ resumen_meteorologico(dataset_completo, anio_usuario = 1973)
 #> 1             4         2059.685
 ```
 
+# Funcion ‘grafico_precipitacion()’
+
+genera un gráfico de barras para los días con precipitación en 2010
+
 ``` r
 grafico_precipitacion(dataset_completo, 2010)
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
+# Funcion ‘temperaturas()’
+
+identifica los días más calurosos y más fríos de 2011
+
 ``` r
 temperaturas(dataset_completo, 2011)
 #>   Anio Dia_Mas_Calido Temperatura_Maxima Dia_Mas_Frio Temperatura_Minima
 #> 1 2011     2011-12-21               33.7   2011-08-01               3.45
 ```
+
+Si deseas contribuir a viajerosiconicos o aprender más sobre cómo
+usarlo, visita el repositorio de GitHub para obtener más detalles,
+documentación y características futuras.
+
+autora: <vmarul@mail.austral.edu.ar>
+
+¡Feliz viaje en el tiempo!
