@@ -16,13 +16,23 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(viajerosiconicos)
+library(dplyr)
 ```
 
 ```{r}
 conversion(98)
 ```
 ```{r}
+load("../data/dataset_completo.rda")
 resumen_meteorologico(dataset_completo, anio_usuario = 1973)
+```
+
+```{r}
+grafico_precipitacion(dataset_completo, 2010)
+```
+
+```{r}
+temperaturas(dataset_completo, 2011)
 ```
 
 
