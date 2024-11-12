@@ -1,5 +1,5 @@
 Package: viajerosiconicos
-Title: Este Es Un Paquete De Meteorologia Y Viajes En El Tiempo
+Title: Este Es Un Paquete De Meteorologia 
 Version: 0.0.0.9000
 Authors@R: 
     person("Victoria", "Marull", , "vmarull@mail.austral.edu.ar", role = c("aut", "cre"),
