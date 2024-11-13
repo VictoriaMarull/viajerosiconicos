@@ -1,24 +1,24 @@
-# Test 1: Verificar que la función no da errores con un año válido
-test_that("La función no da errores con un año válido", {
-  # Asegurarse de que el dataset esté cargado
+# Test 1: Verificar que la funcion no da errores con un anio valido
+test_that("La funcion no da errores con un anio valido", {
+  # Asegurarse de que el dataset este cargado
   data(dataset_completo)
 
-  # Usamos un año que sabemos que tiene datos en el dataset
+  # Usamos un anio que sabemos que tiene datos en el dataset
   anio_ejemplo <- 1973
 
-  # Verificar que la función se ejecuta sin errores para el año 1973
+  # Verificar que la funcion se ejecuta sin errores para el año 1973
   expect_silent(resumen_meteorologico(dataset_completo, anio_ejemplo))
 })
 
-# Test 2: Verificar que la función arroja un error cuando no hay datos para el año
-test_that("La función arroja un error cuando no hay datos para el año ingresado", {
-  # Asegurarse de que el dataset esté cargado
+# Test 2: Verificar que la funcion arroja un error cuando no hay datos para el anio
+test_that("La funcion arroja un error cuando no hay datos para el anio ingresado", {
+  # Asegurarse de que el dataset este cargado
   data(dataset_completo)
 
-  # Usamos un año que sabemos que no tiene datos en el dataset
-  anio_no_existente <- 2050  # Asumimos que no hay datos para este año
+  # Usamos un anio que sabemos que no tiene datos en el dataset
+  anio_no_existente <- 2050  # Asumimos que no hay datos para este anio
 
-  # Verificar que la función lanza un error
+  # Verificar que la funcion lanza un error
   expect_error(resumen_meteorologico(dataset_completo, anio_no_existente),
-               "No se encontraron datos para el año ingresado.")
+               "No se encontraron datos para el anio ingresado.")
 })

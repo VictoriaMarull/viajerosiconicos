@@ -18,27 +18,29 @@
 #'   \item{temperatura_inte_5cm}{Numeric. Temperatura a 5 cm sobre el nivel del suelo.}
 #'   \item{temperatura_intemperie_150cm_minima}{Numeric. Temperatura mínima a 150 cm sobre el nivel del suelo.}
 #'   \item{humedad_suelo}{Numeric. Humedad del suelo.}
-#'   \item{precipitacion_pluviometrica}{Numeric. Precipitación en milímetros registrada durante el día.}
+#'   \item{precipitacion_pluviometrica}{Numeric. Precipitacion en milimetros registrada durante el dia.}
 #'   \item{granizo}{Numeric. Indicador binario (0 o 1) que indica si hubo granizo.}
 #'   \item{nieve}{Numeric. Indicador binario (0 o 1) que indica si hubo nieve.}
-#'   \item{heliofania_efectiva}{Numeric. Horas de radiación solar efectiva recibida durante el día.}
-#'   \item{heliofania_relativa}{Numeric. Proporción de radiación solar relativa recibida.}
-#'   \item{tesion_vapor_media}{Numeric. Tensión de vapor media en el aire durante el día.}
+#'   \item{heliofania_efectiva}{Numeric. Horas de radiación solar efectiva recibida durante el dia.}
+#'   \item{heliofania_relativa}{Numeric. Proporcion de radiacion solar relativa recibida.}
+#'   \item{tesion_vapor_media}{Numeric. Tension de vapor media en el aire durante el dia.}
 #'   \item{humedad_media}{Numeric. Humedad media del aire durante el dia.}
+#'   \item{humedad_media_8_14_20}{Numeric. Humedad media}
 #'   \item{rocio_medio}{Numeric. Temperatura media del punto de rocio.}
-#'   \item{duracion_follaje_mojado}{Numeric. Duración del follaje mojado.}
+#'   \item{duracion_follaje_mojado}{Numeric. Duracion del follaje mojado.}
 #'   \item{velocidad_viento_200cm_media}{Numeric. Velocidad media del viento registrada a 200 cm sobre el suelo.}
 #'   \item{direccion_viento_200cm}{Character. Dirección del viento registrada a 200 cm sobre el suelo.}
 #'   \item{velocidad_viento_1000cm_media}{Numeric. Velocidad media del viento registrada a 1000 cm sobre el suelo.}
 #'   \item{direccion_viento_1000cm}{Character. Dirección del viento registrada a 1000 cm sobre el suelo.}
-#'   \item{presion_media}{Numeric. La presión atmosférica media registrada durante el día.}
-#'   \item{radiacion_global}{Numeric. Radiación solar global recibida durante el día, en unidades de W/m².}
-#'   \item{radiacion_neta}{Numeric. Radiación neta recibida durante el día.}
-#'   \item{evaporacion_tanque}{Numeric. Medición de la evaporación registrada en un tanque durante el día.}
-#'   \item{evapotranspiracion_potencial}{Numeric. Medición de la evapotranspiración potencial.}
-#'   \item{profundidad_napa}{Numeric. Profundidad de la napa freática.}
-#'   \item{horas_frio}{Numeric. Número total de horas de frío registrado durante el día.}
-#'   \item{unidad_frio}{Numeric. Unidad de medición para las horas de frío.}
+#'   \item{velocidad_viento_maxima}{Numeric. velocidad del viento maxima}
+#'   \item{presion_media}{Numeric. La presion atmosferica media registrada durante el dia.}
+#'   \item{radiacion_global}{Numeric. Radiacion solar global recibida durante el dia, en unidades de W/m2.}
+#'   \item{radiacion_neta}{Numeric. Radiacion neta recibida durante el dia.}
+#'   \item{evaporacion_tanque}{Numeric. Medicion de la evaporacion registrada en un tanque durante el dia.}
+#'   \item{evapotranspiracion_potencial}{Numeric. Medicion de la evapotranspiración potencial.}
+#'   \item{profundidad_napa}{Numeric. Profundidad de la napa freatica.}
+#'   \item{horas_frio}{Numeric. Numero total de horas de frio registrado durante el día.}
+#'   \item{unidad_frio}{Numeric. Unidad de medicion para las horas de frio.}
 #' }
 #'
 #' @source datos meteorologicos obtenidos por mis profesoras :D

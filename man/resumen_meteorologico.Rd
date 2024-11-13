@@ -7,9 +7,9 @@
 resumen_meteorologico(dataset, anio_usuario)
 }
 \arguments{
-\item{dataset}{Un dataframe con los datos meteorológicos historicos}
+\item{dataset}{Un dataframe con los datos meteorologicos historicos}
 
-\item{anio_usuario}{Un valor numerico o caracter correspondiente al año para el cual se desea obtener el resumen}
+\item{anio_usuario}{Un valor numerico o caracter correspondiente al anio para el cual se desea obtener el resumen}
 }
 \value{
 esta funcion devuelve diferentes valores con diferentes fenomenos meteorologicos anuales

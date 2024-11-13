@@ -7,7 +7,7 @@
 grafico_precipitacion(dataset, anio)
 }
 \arguments{
-\item{dataset}{Un dataframe con los datos meteorológicos históricos}
+\item{dataset}{Un dataframe con los datos meteorologicos historicos}
 
 \item{anio}{Un valor numerico o caracter correspondiente al año para el cual se desea obtener el grafico}
 }

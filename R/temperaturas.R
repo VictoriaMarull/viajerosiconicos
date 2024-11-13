@@ -1,7 +1,7 @@
 #' Temperaturas anuales
 #'
-#' @param dataset Un dataframe con los datos meteorológicos históricos
-#' @param anio_usuario Un valor numerico o caracter correspondiente al año para el cual se desea obtener
+#' @param dataset Un dataframe con los datos meteorologicos historicos
+#' @param anio_usuario Un valor numerico o caracter correspondiente al anio para el cual se desea obtener
 #' las diferentes temperaturas anuales
 #'
 #' @return esta funcion devuelve el dia mas calido del anio con su temperatura maxima
@@ -15,16 +15,16 @@
 temperaturas <- function(dataset, anio_usuario) {
   dataset$fecha <- as.Date(dataset$fecha)  #convertimos la columna fecha a tipo Date
 
-  #filtramos los datos por el año ingresado por el usuario
+  #filtramos los datos por el anio ingresado por el usuario
   dataset_filtrado <- dataset %>%
-    dplyr::filter(format(fecha, "%Y") == anio_usuario)  # Filtrar por el año
+    dplyr::filter(format(fecha, "%Y") == anio_usuario)  # Filtrar por el anio
 
-  #verificamos si hay datos para ese año
+  #verificamos si hay datos para ese anio
   if (nrow(dataset_filtrado) == 0) {
-    stop("No se encontraron datos para el año ingresado.")
+    stop("No se encontraron datos para el anio ingresado.")
   }
 
-  #obtenemos el dia mas calido y el dia más frio del año
+  #obtenemos el dia mas calido y el dia mas frio del anio
   dia_mas_calido <- dataset_filtrado$fecha[which.max(dataset_filtrado$temperatura_abrigo_150cm)]
   temperatura_maxima <- max(dataset_filtrado$temperatura_abrigo_150cm, na.rm = TRUE)
 
