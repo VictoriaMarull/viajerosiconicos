@@ -22,5 +22,6 @@ Imports:
     cli,
     dplyr,
     ggplot2,
+    magrittr,
     testthat
 Config/testthat/edition: 3
