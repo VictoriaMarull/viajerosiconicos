@@ -1,4 +1,4 @@
-# Test 1: Probar la conversion de 32°F a Celsius (deberia dar 0°C)
+# Test 1: Proobar la conversion de 32°F a Celsius (deberia dar 0°C)
 test_that("32°F se convierte correctamente a 0°C", {
   expect_equal(conversion(32), 0)
 })
