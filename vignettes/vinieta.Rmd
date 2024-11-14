@@ -19,19 +19,27 @@ Importamos el paquete
 library(viajerosiconicos)
 library(dplyr)
 ```
-
+# Funcion `conversion()`
+convierte 98°F a Celsius
 ```{r}
 conversion(98)
 ```
+
+# Funcion `resumen_meteorologico()`
+genera un resumen de condiciones meteorologicas para el año 1973
 ```{r}
 load("../data/dataset_completo.rda")
 resumen_meteorologico(dataset_completo, anio_usuario = 1973)
 ```
-
+# Funcion `grafico_precipitacion()`
+genera un gráfico de barras para los días con precipitación en 2010
 ```{r}
 grafico_precipitacion(dataset_completo, 2010)
 ```
 
+
+# Funcion `temperaturas()` 
+identifica los días más calurosos y más fríos de 2011
 ```{r}
 temperaturas(dataset_completo, 2011)
 ```

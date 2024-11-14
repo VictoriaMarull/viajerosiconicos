@@ -3,6 +3,8 @@
 
 ## viajerosiconicos
 
+# viajeros iconicos <img src="man/figures/viajeros.JPG" align="right" width="130"/>
+
 # Objetivo
 
 ‘viajerosiconicos’ es un paquete de prueba diseñado para trabajar con

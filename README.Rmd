@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
 ```
 
 ## viajerosiconicos
+# viajeros iconicos <img src="man/figures/viajeros.JPG align="right" width="130"/>
+
 
 # Objetivo
 'viajerosiconicos' es un paquete de prueba diseñado para trabajar con datos meteorológicos históricos. Este paquete permite a los usuarios analizar las condiciones climáticas de años pasados y realizar resúmenes sobre temperatura, precipitación y otros fenómenos meteorológicos clave. Con las funciones incluidas, es posible obtener un análisis detallado de las temperaturas extremas, la precipitación y más.
