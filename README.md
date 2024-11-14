@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## viajerosiconicos
+# viajerosiconicos
 
-# viajeros iconicos <img src="man/figures/viajeros.JPG" align="right" width="130"/>
+<img src="man/figures/viajeros.png" align="right" width="130"/>
 
-# Objetivo
+## Objetivo
 
 ‘viajerosiconicos’ es un paquete de prueba diseñado para trabajar con
 datos meteorológicos históricos. Este paquete permite a los usuarios
@@ -31,7 +31,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/VictoriaMarull/viajerosiconicos/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-## Instalacion
+# Instalacion
 
 Puedes instalar la versión de desarrollo de **`viajerosiconicos`**
 directamente desde GitHub [GitHub](https://github.com/) utilizando el
