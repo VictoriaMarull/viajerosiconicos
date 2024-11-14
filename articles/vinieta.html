@@ -76,9 +76,18 @@
 <span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span></code></pre></div>
+<div class="section level2">
+<h2 id="funcion-conversion">Funcion <code>conversion()</code><a class="anchor" aria-label="anchor" href="#funcion-conversion"></a>
+</h2>
+<p>convierte 98°F a Celsius</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/conversion.html">conversion</a></span><span class="op">(</span><span class="fl">98</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 36.66667</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="funcion-resumen_meteorologico">Funcion <code>resumen_meteorologico()</code><a class="anchor" aria-label="anchor" href="#funcion-resumen_meteorologico"></a>
+</h2>
+<p>genera un resumen de condiciones meteorologicas para el año 1973</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/load.html" class="external-link">load</a></span><span class="op">(</span><span class="st">"../data/dataset_completo.rda"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/resumen_meteorologico.html">resumen_meteorologico</a></span><span class="op">(</span><span class="va">dataset_completo</span>, anio_usuario <span class="op">=</span> <span class="fl">1973</span><span class="op">)</span></span>
@@ -86,14 +95,27 @@
 <span><span class="co">#&gt; 1          17.57041                 42                 -4              5602.8</span></span>
 <span><span class="co">#&gt;   granizo_total horas_frio_total</span></span>
 <span><span class="co">#&gt; 1             4         2059.685</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="funcion-grafico_precipitacion">Funcion <code>grafico_precipitacion()</code><a class="anchor" aria-label="anchor" href="#funcion-grafico_precipitacion"></a>
+</h2>
+<p>genera un gráfico de barras para los días con precipitación en
+2010</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/grafico_precipitacion.html">grafico_precipitacion</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2010</span><span class="op">)</span></span></code></pre></div>
 <p><img src="vinieta_files/figure-html/unnamed-chunk-4-1.png" width="700"></p>
+</div>
+<div class="section level2">
+<h2 id="funcion-temperaturas">Funcion <code>temperaturas()</code><a class="anchor" aria-label="anchor" href="#funcion-temperaturas"></a>
+</h2>
+<p>identifica los días más calurosos y más fríos de 2011</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/temperaturas.html">temperaturas</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2011</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   Anio Dia_Mas_Calido Temperatura_Maxima Dia_Mas_Frio Temperatura_Minima</span></span>
 <span><span class="co">#&gt; 1 2011     2011-12-21               33.7   2011-08-01               3.45</span></span></code></pre></div>
-  </main>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
