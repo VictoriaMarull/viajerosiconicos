@@ -1,6 +1,12 @@
 #' Unir datasets
 #'
-#' @param ids_estaciones ponemos los id de las estaciones
+#' Esta funcion toma una lista de IDs de estaciones meteorologicas y los usa para leer
+#' y combinar los datos historicos correspondientes a cada estacion en un solo dataframe.
+#' El resultado es un dataframe que contiene los datos combinados de todas las estaciones.
+#'
+#' @param ids_estaciones Un vector de caracteres con los IDs de las estaciones meteorologicas
+#' que se desean combinar. Los IDs se utilizan para acceder a los archivos correspondientes
+#' a cada estacion.
 #'
 #'
 #' @examples

@@ -86,6 +86,24 @@ Es ideal para analizar los picos de temperatura en un conjunto de datos de un a�
 temperaturas(dataset_completo, 2011)
 ```
 
+# Funcion `lectura_datos()` 
+Esta funcion permite leer los datos meteorologicos historicos de una estacion especifica
+a partir de su ID. Si los datos ya se han descargado previamente, la funcion los lee desde
+el directorio temporal; si no, los descarga desde la URL correspondiente y los lee.
+```{r}
+lectura_datos ("NH0046")
+```
+
+# Funcion `unir_datasets()` 
+Esta funcion toma una lista de IDs de estaciones meteorologicas y los usa para leer
+y combinar los datos historicos correspondientes a cada estacion en un solo dataframe.
+El resultado es un dataframe que contiene los datos combinados de todas las estaciones.
+```{r}
+ids_estaciones <- c("NH0046", "NH0098", "NH0437", "NH0472", "NH0910")
+dataset_completo <- unir_datasets(ids_estaciones)
+```
+
+
 Si deseas contribuir a viajerosiconicos o aprender más sobre cómo usarlo, visita el repositorio de GitHub para obtener más detalles, documentación y características futuras.
 
 autora: vmarul@mail.austral.edu.ar

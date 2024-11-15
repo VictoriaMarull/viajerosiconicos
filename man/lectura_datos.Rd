@@ -7,13 +7,18 @@
 lectura_datos(id_estacion)
 }
 \arguments{
-\item{id_estacion}{este es el id de la estacion}
+\item{id_estacion}{Un valor de tipo caracter que corresponde al ID de la estacion meteorologica
+de la cual se desea obtener los datos. Este ID se utiliza para formar la URL desde donde se
+descargan los datos.}
 }
 \value{
-esto devuelve los datasets por estacion
+Devuelve un dataframe con los datos meteorologicos de la estacion correspondiente al ID ingresado.
+Si los datos no estan disponibles localmente, la funcion los descarga desde una URL predefinida.
 }
 \description{
-Lectura Datos
+Esta funcion permite leer los datos meteorologicos historicos de una estacion especifica
+a partir de su ID. Si los datos ya se han descargado previamente, la funcion los lee desde
+el directorio temporal; si no, los descarga desde la URL correspondiente y los lee.
 }
 \examples{
 lectura_datos ("NH0046")

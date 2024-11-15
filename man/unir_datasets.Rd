@@ -7,13 +7,17 @@
 unir_datasets(ids_estaciones)
 }
 \arguments{
-\item{ids_estaciones}{ponemos los id de las estaciones}
+\item{ids_estaciones}{Un vector de caracteres con los IDs de las estaciones meteorologicas
+que se desean combinar. Los IDs se utilizan para acceder a los archivos correspondientes
+a cada estacion.}
 }
 \value{
 devuelve los datasets unidos
 }
 \description{
-Unir datasets
+Esta funcion toma una lista de IDs de estaciones meteorologicas y los usa para leer
+y combinar los datos historicos correspondientes a cada estacion en un solo dataframe.
+El resultado es un dataframe que contiene los datos combinados de todas las estaciones.
 }
 \examples{
 #' Definir los IDs de las estaciones
