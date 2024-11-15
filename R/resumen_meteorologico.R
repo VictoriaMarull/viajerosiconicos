@@ -1,9 +1,19 @@
 #' Resumen meteorologico anual
 #'
+#' Esta funcion recibe un conjunto de datos meteorologicos y un ano especifico para el cual se calcula un resumen
+#' con diferentes fenomenos meteorologicos anuales, incluyendo la temperatura media, maxima y minima, la precipitacion
+#' total, el total de dias con granizo, y el total de horas con frio.
+#'
 #' @param dataset Un dataframe con los datos meteorologicos historicos
 #' @param anio_usuario Un valor numerico o caracter correspondiente al anio para el cual se desea obtener el resumen
 #'
-#' @return esta funcion devuelve diferentes valores con diferentes fenomenos meteorologicos anuales
+#' @return Un dataframe con el resumen de las condiciones meteorologicas del anio solicitado. Las columnas devueltas son:
+#'         - `temperatura_media`: La temperatura media anual medida a 150 cm de altura.
+#'         - `temperatura_maxima`: La temperatura maxima anual medida a 150 cm de altura.
+#'         - `temperatura_minima`: La temperatura minima anual medida a 150 cm de altura.
+#'         - `precipitacion_total`: La precipitacion total anual en milimetros.
+#'         - `granizo_total`: El total de dias con granizo en el anio.
+#'         - `horas_frio_total`: El total de horas con frio en el anio.
 #'
 #' @examples
 #' resumen_meteorologico(dataset_completo, anio_usuario = 1973)

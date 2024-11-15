@@ -1,12 +1,19 @@
 #' Temperaturas anuales
+#' Esta funcion recibe un conjunto de datos meteorologicos y un anio especifico para el cual se calcula:
+#' el dia mas calido (con su temperatura maxima) y el dia mas frio (con su temperatura minima).
+#' El analisis se realiza sobre las temperaturas de abrigo medidas a 150 cm de altura.
 #'
 #' @param dataset Un dataframe con los datos meteorologicos historicos
-#' @param anio_usuario Un valor numerico o caracter correspondiente al anio para el cual se desea obtener
-#' las diferentes temperaturas anuales
+#' @param anio_usuario Un valor numerico o carácter correspondiente al año para el cual se desea obtener
+#'                     las temperaturas anuales, el día más cálido y el día más frío.
 #'
-#' @return esta funcion devuelve el dia mas calido del anio con su temperatura maxima
-#' junto al dia mas frio del anio con su temperatura minima
-
+#' @return Un dataframe con el anio solicitado, el dia mas calido con su temperatura maxima y el dia mas frio
+#'         con su temperatura minima. Las columnas devueltas son:
+#'         - `Anio`: El ano para el cual se realizo el calculo.
+#'         - `Dia_Mas_Calido`: El dia mas calido del ano.
+#'         - `Temperatura_Maxima`: La temperatura maxima del dia mas calido.
+#'         - `Dia_Mas_Frio`: El dia mas frio del ano.
+#'         - `Temperatura_Minima`: La temperatura minima del dia mas frio.
 #'
 #' @examples
 #' temperaturas(dataset_completo, 2011)

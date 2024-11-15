@@ -1,9 +1,14 @@
 #' Crear grafico de precipitacion pluviometrica
 #'
+#' Esta funcion genera un grafico de barras que muestra la cantidad de dias con precipitacion pluviometrica en un ano especifico.
+#' El grafico se basa en los datos de precipitacion almacenados en el dataframe proporcionado, filtrando los datos para el
+#' ano solicitado y solo mostrando los dias con precipitacion mayor a 0.
+#'
 #' @param dataset Un dataframe con los datos meteorologicos historicos
 #' @param anio Un valor numerico o caracter correspondiente al año para el cual se desea obtener el grafico
 #'
-#' @return esta funcion devuelve un grafico con la precipitacion pluviometrica anual
+#' @return Esta funcion devuelve un grafico de barras donde el eje x muestra las fechas de los dias con precipitacion,
+#'         y el eje y muestra el numero de dias con precipitacion.
 #'
 #' @examples
 #' grafico_precipitacion(dataset_completo, 2010)
