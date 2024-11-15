@@ -20,26 +20,45 @@ library(viajerosiconicos)
 library(dplyr)
 ```
 # Funcion `conversion()`
-convierte 98°F a Celsius
+Convierte una temperatura de Fahrenheit a Celsius:
+
+Esta funcion toma un valor numerico en grados Fahrenheit y lo convierte a grados Celsius utilizando la formula estandar de conversion:
+Celsius = (Fahrenheit - 32) * 5 / 9.
+
+Es util para realizar conversiones rapidas entre las dos escalas de temperatura mas comunes.
 ```{r}
 conversion(98)
 ```
 
 # Funcion `resumen_meteorologico()`
-genera un resumen de condiciones meteorologicas para el año 1973
+Genera un resumen de las condiciones meteorologicas para un ano especifico:
+
+Esta funcion toma un conjunto de datos meteorologicos y un ano como parametros. Luego, filtra los datos para el ano solicitado y calcula el resumen de las condiciones meteorologicas, incluyendo:
+
+-La temperatura media anual medida a 150 cm de altura.
+-La temperatura maxima y minima anual.
+-El total de precipitacion anual.
+-El total de dias con granizo.
+-El total de horas con frio.
+Este resumen proporciona una vision completa de las condiciones climaticas de un ano determinado
 ```{r}
 load("../data/dataset_completo.rda")
 resumen_meteorologico(dataset_completo, anio_usuario = 1973)
 ```
 # Funcion `grafico_precipitacion()`
-genera un gráfico de barras para los días con precipitación en 2010
+Genera un gráfico de barras que muestra el numero de dias con precipitacion durante un ano especifico:
+
+Esta funcion crea un grafico de barras en el cual el eje x representa las fechas de los dias con precipitacion (mayor a 0) en el ano especificado, y el eje y representa el numero de dias con precipitacion.
+El grafico visualiza de manera efectiva la cantidad de dias lluviosos o con precipitaciones significativas durante el ano seleccionado.
 ```{r}
 grafico_precipitacion(dataset_completo, 2010)
 ```
 
 
 # Funcion `temperaturas()` 
-identifica los días más calurosos y más fríos de 2011
+Identifica los dias mas calurosos y los mas frios de un ano especifico:
+
+Esta funcion permite conocer cual fue el dia mas caluroso y cual fue el dia mas frio del ano solicitado. La funcion devuelve tanto la temperatura maxima como la temperatura minima de esos dias, proporcionando una vision clara de las condiciones extremas durante ese periodo.
 ```{r}
 temperaturas(dataset_completo, 2011)
 ```
