@@ -79,7 +79,12 @@
 <div class="section level2">
 <h2 id="funcion-conversion">Funcion <code>conversion()</code><a class="anchor" aria-label="anchor" href="#funcion-conversion"></a>
 </h2>
-<p>convierte 98°F a Celsius</p>
+<p>Convierte una temperatura de Fahrenheit a Celsius:</p>
+<p>Esta funcion toma un valor numerico en grados Fahrenheit y lo
+convierte a grados Celsius utilizando la formula estandar de conversion:
+Celsius = (Fahrenheit - 32) * 5 / 9.</p>
+<p>Es util para realizar conversiones rapidas entre las dos escalas de
+temperatura mas comunes.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/conversion.html">conversion</a></span><span class="op">(</span><span class="fl">98</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 36.66667</span></span></code></pre></div>
@@ -87,7 +92,16 @@
 <div class="section level2">
 <h2 id="funcion-resumen_meteorologico">Funcion <code>resumen_meteorologico()</code><a class="anchor" aria-label="anchor" href="#funcion-resumen_meteorologico"></a>
 </h2>
-<p>genera un resumen de condiciones meteorologicas para el año 1973</p>
+<p>Genera un resumen de las condiciones meteorologicas para un ano
+especifico:</p>
+<p>Esta funcion toma un conjunto de datos meteorologicos y un ano como
+parametros. Luego, filtra los datos para el ano solicitado y calcula el
+resumen de las condiciones meteorologicas, incluyendo:</p>
+<p>-La temperatura media anual medida a 150 cm de altura. -La
+temperatura maxima y minima anual. -El total de precipitacion anual. -El
+total de dias con granizo. -El total de horas con frio. Este resumen
+proporciona una vision completa de las condiciones climaticas de un ano
+determinado</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/load.html" class="external-link">load</a></span><span class="op">(</span><span class="st">"../data/dataset_completo.rda"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/resumen_meteorologico.html">resumen_meteorologico</a></span><span class="op">(</span><span class="va">dataset_completo</span>, anio_usuario <span class="op">=</span> <span class="fl">1973</span><span class="op">)</span></span>
@@ -99,8 +113,13 @@
 <div class="section level2">
 <h2 id="funcion-grafico_precipitacion">Funcion <code>grafico_precipitacion()</code><a class="anchor" aria-label="anchor" href="#funcion-grafico_precipitacion"></a>
 </h2>
-<p>genera un gráfico de barras para los días con precipitación en
-2010</p>
+<p>Genera un gráfico de barras que muestra el numero de dias con
+precipitacion durante un ano especifico:</p>
+<p>Esta funcion crea un grafico de barras en el cual el eje x representa
+las fechas de los dias con precipitacion (mayor a 0) en el ano
+especificado, y el eje y representa el numero de dias con precipitacion.
+El grafico visualiza de manera efectiva la cantidad de dias lluviosos o
+con precipitaciones significativas durante el ano seleccionado.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/grafico_precipitacion.html">grafico_precipitacion</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2010</span><span class="op">)</span></span></code></pre></div>
 <p><img src="vinieta_files/figure-html/unnamed-chunk-4-1.png" width="700"></p>
@@ -108,7 +127,13 @@
 <div class="section level2">
 <h2 id="funcion-temperaturas">Funcion <code>temperaturas()</code><a class="anchor" aria-label="anchor" href="#funcion-temperaturas"></a>
 </h2>
-<p>identifica los días más calurosos y más fríos de 2011</p>
+<p>Identifica los dias mas calurosos y los mas frios de un ano
+especifico:</p>
+<p>Esta funcion permite conocer cual fue el dia mas caluroso y cual fue
+el dia mas frio del ano solicitado. La funcion devuelve tanto la
+temperatura maxima como la temperatura minima de esos dias,
+proporcionando una vision clara de las condiciones extremas durante ese
+periodo.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/temperaturas.html">temperaturas</a></span><span class="op">(</span><span class="va">dataset_completo</span>, <span class="fl">2011</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   Anio Dia_Mas_Calido Temperatura_Maxima Dia_Mas_Frio Temperatura_Minima</span></span>
