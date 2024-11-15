@@ -1,5 +1,42 @@
 url: https://victoriamarull.github.io/viajerosiconicos/
 template:
   bootstrap: 5
-  theme: kate
+  #theme: kate
 
+site:
+  title: "viajerosiconicos"
+  description: "Paquete de analisis meteorologico historico para viajeros en el tiempo"
+
+
+navbar:
+  structure:
+    - text: "Inicio"
+      href: index.html
+    - text: "Funciones"
+      href: functions.html
+    - text: "Acerca de"
+      href: about.html
+
+home:
+  contents:
+    - section: "Bienvenido"
+      content: |
+        Este paquete permite analizar datos meteorologicos historicos y realizar analisis sobre las condiciones climaticas del pasado. Ideal para investigadores y curiosos que quieran explorar el clima de epocas pasadas.
+    - section: "Como empezar"
+      content: |
+        Para instalar el paquete, usa el siguiente comando:
+        ```r
+        install.packages("viajerosiconicos")
+        ```
+
+vignettes:
+  - introduction
+  - usage
+
+footer:
+  text: "Paquete desarrollado por Victoria Marull | 2024"
+
+build:
+  articles: true
+  vignettes: true
+  site: true
