@@ -67,7 +67,8 @@ Esta funcion permite leer los datos meteorologicos historicos de una estacion es
 a partir de su ID. Si los datos ya se han descargado previamente, la funcion los lee desde
 el directorio temporal; si no, los descarga desde la URL correspondiente y los lee.
 ```{r}
-lectura_datos ("NH0046")
+dataset <- lectura_datos("NH0046")  
+head(dataset) 
 ```
 
 # Funcion `unir_datasets()`
