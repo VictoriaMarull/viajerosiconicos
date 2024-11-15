@@ -2,18 +2,20 @@
 % Please edit documentation in R/conversion.R
 \name{conversion}
 \alias{conversion}
-\title{Conversion de grados}
+\title{Conversion de grados Fahrenheit a Celsius}
 \usage{
 conversion(fahrenheit)
 }
 \arguments{
-\item{fahrenheit}{parametro numerico}
+\item{fahrenheit}{Un valor numerico que representa la temperatura en grados Fahrenheit.}
 }
 \value{
-devuelve la temperatura en centigrados
+Esta funcion devuelve un valor numerico que representa la temperatura convertida en grados Celsius.
+El valor devuelto es el equivalente en grados Celsius de la temperatura proporcionada en Fahrenheit.
 }
 \description{
-Conversion de grados
+Esta funcion convierte una temperatura dada en grados Fahrenheit a su equivalente en grados Celsius.
+Utiliza la formula comun de conversion: Celsius = (Fahrenheit - 32) * 5/9.
 }
 \examples{
 conversion(98)

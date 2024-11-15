@@ -2,22 +2,33 @@
 % Please edit documentation in R/temperaturas.R
 \name{temperaturas}
 \alias{temperaturas}
-\title{Temperaturas anuales}
+\title{Temperaturas anuales
+Esta funcion recibe un conjunto de datos meteorologicos y un anio especifico para el cual se calcula:
+el dia mas calido (con su temperatura maxima) y el dia mas frio (con su temperatura minima).
+El analisis se realiza sobre las temperaturas de abrigo medidas a 150 cm de altura.}
 \usage{
 temperaturas(dataset, anio_usuario)
 }
 \arguments{
 \item{dataset}{Un dataframe con los datos meteorologicos historicos}
 
-\item{anio_usuario}{Un valor numerico o caracter correspondiente al anio para el cual se desea obtener
-las diferentes temperaturas anuales}
+\item{anio_usuario}{Un valor numerico o carácter correspondiente al año para el cual se desea obtener
+las temperaturas anuales, el día más cálido y el día más frío.}
 }
 \value{
-esta funcion devuelve el dia mas calido del anio con su temperatura maxima
-junto al dia mas frio del anio con su temperatura minima
+Un dataframe con el anio solicitado, el dia mas calido con su temperatura maxima y el dia mas frio
+con su temperatura minima. Las columnas devueltas son:
+- \code{Anio}: El ano para el cual se realizo el calculo.
+- \code{Dia_Mas_Calido}: El dia mas calido del ano.
+- \code{Temperatura_Maxima}: La temperatura maxima del dia mas calido.
+- \code{Dia_Mas_Frio}: El dia mas frio del ano.
+- \code{Temperatura_Minima}: La temperatura minima del dia mas frio.
 }
 \description{
 Temperaturas anuales
+Esta funcion recibe un conjunto de datos meteorologicos y un anio especifico para el cual se calcula:
+el dia mas calido (con su temperatura maxima) y el dia mas frio (con su temperatura minima).
+El analisis se realiza sobre las temperaturas de abrigo medidas a 150 cm de altura.
 }
 \examples{
 temperaturas(dataset_completo, 2011)
